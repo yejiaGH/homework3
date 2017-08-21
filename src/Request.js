@@ -14,3 +14,5 @@ class Request extends DB () {
         console.log('get')
     }
 }
+
+let r = new Request({'url':'abc'}).request();

@@ -1,6 +1,6 @@
 const DB = require('../lib/db.js')
 
-class Request extends DB () {
+class Request extends DB {
     constructor(options={}) {
         super(options)
     }
@@ -15,4 +15,6 @@ class Request extends DB () {
     }
 }
 
-let r = new Request({'url':'abc'}).request();
+let r = new Request({'url':'abc'})
+.request()
+.get();
